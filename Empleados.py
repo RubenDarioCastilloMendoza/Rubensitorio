@@ -1,5 +1,5 @@
 class Empleado:
-    def _init_(self, nombre, sueldo, antiguedad, departamento, diasdescanzo):
+    def __init__(self, nombre, sueldo, antiguedad, departamento, diasdescanzo):
         self.nombre = nombre
         self.sueldo = sueldo
         self.antiguedad =antiguedad
@@ -65,7 +65,7 @@ while True:
        Lista_empleados.append(nuevo_empleado)
        print("empleado agregado")
        print("Aqui esta su registro: ")
-       nuevo_empleado.imprimir()
+       nuevo_empleado.imprimir_datos()
     
    elif opcion == 2:
         print("Modificar empleado")
